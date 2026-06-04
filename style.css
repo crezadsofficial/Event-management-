@@ -268,9 +268,13 @@ h1, h2, h3, h4, h5, h6 {
     100% { transform: scale(1); }
 }
 
-.hero-overlay{
-    background:
-    linear-gradient(
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
         rgba(5,10,20,0.75),
         rgba(5,10,20,0.85)
     );
@@ -291,9 +295,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 35px;
-    opacity: 0.9;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 35px;
+    opacity: 0.95;
 }
 
 .hero-btns {
@@ -738,4 +743,96 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-links li {
     margin-bottom: 12px  
+} 
+.footer-links a{
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: var(--secondary-color);
+}
+
+.social-links{
+    display:flex;
+    gap:15px;
+}
+
+.social-links a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background:var(--secondary-color);
+    color:var(--primary-color);
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:30px;
+    padding-top:20px;
+}
+
+/* WhatsApp Button */
+
+.whatsapp-float{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    z-index:999;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Hero Premium */
+
+.hero-content h1{
+    font-size:5rem;
+    text-shadow:0 8px 30px rgba(0,0,0,0.4);
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.8rem;
+}
+
+.about-section{
+    grid-template-columns:1fr;
+}
+
+.contact-wrapper{
+    grid-template-columns:1fr;
+}
+
+.process-timeline{
+    grid-template-columns:1fr;
+}
+
+.stats-grid{
+    grid-template-columns:repeat(2,1fr);
+}
 }
