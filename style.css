@@ -739,24 +739,3 @@ h1, h2, h3, h4, h5, h6 {
 .footer-links li {
     margin-bottom: 12px  
 }
-.hero-badge{
-    display:inline-block;
-    padding:12px 25px;
-    border-radius:50px;
-    border:1px solid #d4af37;
-    color:#d4af37;
-    background:rgba(212,175,55,0.12);
-    margin-bottom:25px;
-    font-size:14px;
-    letter-spacing:1px;
-}
-
-.hero-content h1{
-    font-size:4.5rem;
-    font-weight:700;
-}
-
-.hero-content p{
-    max-width:700px;
-    margin:20px auto 35px;
-}
