@@ -738,4 +738,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-links li {
-    margin-bottom: 12px
+    margin-bottom: 12px  
+   .loader-wrapper{
+    display:none !important;
+}
