@@ -324,16 +324,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 850px;
+    width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 
 .about-content p {
     margin-bottom: 20px;
     color: #555;
+    line-height: 1.8;
 }
 
 .about-features {
