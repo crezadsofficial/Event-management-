@@ -782,4 +782,26 @@ h1, h2, h3, h4, h5, h6 {
 .stats-grid{
     grid-template-columns:repeat(2,1fr);
 }
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
 }
