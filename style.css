@@ -813,16 +813,44 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
 
-/* Logo */
+/* ===== Logo ===== */
 
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
 }
 
 .logo-img{
-    height: 45px;
-    width: auto;
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    flex-shrink:0;
 }
+
+.logo-text{
+    font-size:2rem;
+    font-weight:700;
+    color:#fff;
+    white-space:nowrap;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.logo{
+    gap:8px;
+}
+
+.logo-img{
+    width:38px;
+    height:38px;
+}
+
+.logo-text{
+    font-size:1.2rem;
+}
+
 }
