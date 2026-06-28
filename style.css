@@ -816,38 +816,49 @@ h1, h2, h3, h4, h5, h6 {
 /* ===== Navbar Logo ===== */
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    text-decoration:none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
 }
 
 .logo-img{
-    width:38px;
-    height:38px;
-    object-fit:contain;
-    display:block;
-    flex-shrink:0;
+    width: 20px;
+    height: auto;
+    max-height: 20px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
 }
 
 .logo-text{
-    font-size:32px;
-    font-weight:700;
-    color:#ffffff;
-    line-height:1;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    line-height: 1;
 }
 
-/* Mobile */
+.logo-text .highlight{
+    color: #d4af37;
+}
+
+/* ===== Mobile Responsive ===== */
 
 @media (max-width:768px){
 
+.logo{
+    gap:6px;
+}
+
 .logo-img{
-    width:30px;
-    height:30px;
+    width:16px;
+    max-height:16px;
 }
 
 .logo-text{
-    font-size:22px;
+    font-size:1.2rem;
 }
 
 }
