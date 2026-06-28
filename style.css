@@ -205,8 +205,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img{
-    width:30px;
-    height:30px;
+    width:55px;
+    height:55px;
     object-fit:contain;
     display:block;
     flex-shrink:0;
@@ -838,8 +838,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img{
-    width:16px;
-    max-height:16px;
+    width:40px;
+    max-height:40px;
 }
 
 .logo-text{
