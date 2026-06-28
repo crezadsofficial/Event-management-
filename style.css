@@ -812,5 +812,17 @@ h1, h2, h3, h4, h5, h6 {
     .nav-menu.active {
         display: flex;
     }
+
+/* Logo */
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.logo-img{
+    height: 45px;
+    width: auto;
+}
+}
