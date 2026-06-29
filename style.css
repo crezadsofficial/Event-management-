@@ -847,3 +847,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 }
+   .stats-grid{
+    display:flex !important;
+    justify-content:space-between !important;
+    flex-wrap:wrap !important;
+}
+
+.stat-item{
+    width:23%;
+    text-align:center;
+}
